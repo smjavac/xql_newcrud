@@ -1,0 +1,8 @@
+target/
+out/
+.idea
+*.properties
+*.log
+*.iml
+*.png
+out.*
