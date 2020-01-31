@@ -34,22 +34,21 @@ public class MainLayout extends HorizontalLayout {
 
     public MainLayout() {
         try {
-            IDmSession session = DocuminoClient.get().getDmAdminClient().newSession(new DmLoginInfo(null, null));
-            automobilesList = AutomobileService.getAll(session);
+            automobilesList = AutomobileService.getAll();
             LOGGER.debug("SELECT * FROM ddt_auto");
             dataProvider = new ListDataProvider<>(automobilesList);
             grid.setDataProvider(dataProvider);
             grid.setWidth("525");
             add.addClickListener(clickEvent -> {
-                addAuto(session);
+                addAuto();
             });
 
             delete.addClickListener(clickEvent -> {
-                deleteAuto(session);
+                deleteAuto();
             });
 
             edit.addClickListener(clickEvent -> {
-                editAuto(session);
+                editAuto();
             });
 
             horizontalLayout.addComponents(add, delete, edit, search);
@@ -59,7 +58,7 @@ public class MainLayout extends HorizontalLayout {
             grid.addColumn(Automobiles::getModel).setCaption("Model");
             grid.addColumn(Automobiles::getBody).setCaption("Body");
 
-        } catch (DmException | IOException | DmConfigureException e) {
+        } catch (DmException e) {
             LOGGER.error(e.getMessage(), e);
         }
     }
@@ -69,7 +68,7 @@ public class MainLayout extends HorizontalLayout {
         grid.setDataProvider(dataProvider);
     }
 
-    void addAuto(IDmSession session) {
+    void addAuto() {
         final VerticalLayout layout2 = new VerticalLayout();
         final TextField modelTipeTxt = new TextField();
         final TextField bodyTxt = new TextField();
@@ -86,21 +85,13 @@ public class MainLayout extends HorizontalLayout {
             BinderValidationStatus<Automobiles> status = binder.validate();
 
             String xql = String.format("CREATE ddt_auto OBJECT SET dss_model = '%s' SET dss_body = '%s'", modelTipeTxt.getValue(), bodyTxt.getValue());
-            try {
+            try (IDmSession session = DocuminoClient.get().getDmAdminClient().newSession(new DmLoginInfo(null, null))) {
                 if (!status.hasErrors()) {
                     automobilesList = AutomobileService.addRow(session, xql);
                     LOGGER.debug(xql);
                 }
-            } catch (DmException e) {
-                LOGGER.error(e.getMessage());
-            } finally {
-                if (session != null) {
-                    try {
-                        session.close();
-                    } catch (DmException e) {
-                        LOGGER.error(e.getMessage());
-                    }
-                }
+            } catch (DmException | DmConfigureException | IOException e) {
+                LOGGER.error(e.getMessage(), e);
             }
             Page.getCurrent().reload();
             initData2();
@@ -110,29 +101,21 @@ public class MainLayout extends HorizontalLayout {
         addComponent(layout2);
     }
 
-    void deleteAuto(IDmSession session) {
-        try {
+    void deleteAuto() {
+        try (IDmSession session = DocuminoClient.get().getDmAdminClient().newSession(new DmLoginInfo(null, null))) {
             String xql = String.format("DELETE ddt_auto OBJECTS WHERE r_object_id = '%s'",
                     grid.getSelectionModel().getFirstSelectedItem().get().getId());
 
             automobilesList = AutomobileService.deleteRow(session, xql);
             LOGGER.debug(xql);
-        } catch (DmException e) {
-            LOGGER.error(e.getMessage());
-        } finally {
-            if (session != null) {
-                try {
-                    session.close();
-                } catch (DmException e) {
-                    LOGGER.error(e.getMessage());
-                }
-            }
+        } catch (DmException | DmConfigureException | IOException e) {
+            LOGGER.error(e.getMessage(), e);
         }
         Page.getCurrent().reload();
         initData2();
     }
 
-    void editAuto(IDmSession session) {
+    void editAuto() {
         Button save = new Button("Сохранить");
         final VerticalLayout layout2 = new VerticalLayout();
         final TextField modelTxt = new TextField("Марка");
@@ -147,19 +130,11 @@ public class MainLayout extends HorizontalLayout {
                     model,
                     body,
                     grid.getSelectionModel().getFirstSelectedItem().get().getId());
-            try {
+            try (IDmSession session = DocuminoClient.get().getDmAdminClient().newSession(new DmLoginInfo(null, null))) {
                 automobilesList = AutomobileService.editRow(session, xql);
                 LOGGER.debug(xql);
-            } catch (DmException e) {
-                LOGGER.error(e.getMessage());
-            } finally {
-                if (session != null) {
-                    try {
-                        session.close();
-                    } catch (DmException e) {
-                        LOGGER.error(e.getMessage());
-                    }
-                }
+            } catch (DmException | DmConfigureException | IOException e) {
+                LOGGER.error(e.getMessage(), e);
             }
             Page.getCurrent().reload();
             initData2();

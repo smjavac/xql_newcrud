@@ -81,7 +81,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 [DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\.m2
 [INFO] Scanning for projects...
 [DEBUG] Using mirror central-mirror (http://svndev.itc-c.local:3080/artifactory/maven2) for central (https://repo.maven.apache.org/maven2).
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1517864, ConflictMarker.markTime=705799, ConflictMarker.nodeCount=257, ConflictIdSorter.graphTime=910425, ConflictIdSorter.topsortTime=471899, ConflictIdSorter.conflictIdCount=83, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9371233, ConflictResolver.conflictItemCount=201, DefaultDependencyCollector.collectTime=604373671, DefaultDependencyCollector.transformTime=14995963}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1923896, ConflictMarker.markTime=675354, ConflictMarker.nodeCount=257, ConflictIdSorter.graphTime=1030156, ConflictIdSorter.topsortTime=479218, ConflictIdSorter.conflictIdCount=83, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9463154, ConflictResolver.conflictItemCount=201, DefaultDependencyCollector.collectTime=621375790, DefaultDependencyCollector.transformTime=15714351}
 [DEBUG] org.apache.maven.plugins:maven-pmd-plugin:jar:3.12.0:
 [DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
 [DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
@@ -230,7 +230,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 [DEBUG] Looking up lifecycle mappings for packaging war from ClassRealm[project>ru.said:xql_crud:1.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
 [DEBUG] === REACTOR BUILD PLAN ================================================
 [DEBUG] Project: ru.said:xql_crud:war:1.0-SNAPSHOT
-[DEBUG] Tasks:   [clean, install]
+[DEBUG] Tasks:   [install]
 [DEBUG] Style:   Regular
 [DEBUG] =======================================================================
 [INFO] 
@@ -267,34 +267,12 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 [DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
 [DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
 [DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
-[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
-[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
-[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
 [DEBUG] === PROJECT BUILD PLAN ================================================
 [DEBUG] Project:       ru.said:xql_crud:1.0-SNAPSHOT
 [DEBUG] Dependencies (collect): []
 [DEBUG] Dependencies (resolve): [compile, runtime, test]
 [DEBUG] Repositories (dependencies): [vaadin-addons (http://maven.vaadin.com/vaadin-addons, default, releases+snapshots), idmt.commons (http://svndev.itc-c.local:3080/artifactory/idmt.commons, default, releases+snapshots), documino (http://artifactory.id-mt.ru:3080/artifactory/documino, default, releases+snapshots), public (http://artifactory.id-mt.ru:3080/artifactory/public, default, releases+snapshots), libs-releases-ext (http://artifactory.id-mt.ru:3080/artifactory/libs-releases-ext, default, releases+snapshots), central-mirror (http://svndev.itc-c.local:3080/artifactory/maven2, default, releases)]
 [DEBUG] Repositories (plugins)     : [idmt.commons (http://svndev.itc-c.local:3080/artifactory/idmt.commons, default, releases+snapshots), documino (http://artifactory.id-mt.ru:3080/artifactory/documino, default, releases+snapshots), public (http://artifactory.id-mt.ru:3080/artifactory/public, default, releases+snapshots), central-mirror (http://svndev.itc-c.local:3080/artifactory/maven2, default, releases)]
-[DEBUG] -----------------------------------------------------------------------
-[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
-[DEBUG] Style:         Regular
-[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-  <directory default-value="${project.build.directory}"/>
-  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
-  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
-  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
-  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
-  <skip default-value="false">${clean.skip}</skip>
-  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
-  <verbose>${clean.verbose}</verbose>
-</configuration>
 [DEBUG] -----------------------------------------------------------------------
 [DEBUG] Goal:          com.vaadin:vaadin-maven-plugin:8.6.2:update-widgetset (default)
 [DEBUG] Style:         Regular
@@ -803,7 +781,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
   <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
 </configuration>
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=233022, ConflictMarker.markTime=50352, ConflictMarker.nodeCount=87, ConflictIdSorter.graphTime=106851, ConflictIdSorter.topsortTime=35714, ConflictIdSorter.conflictIdCount=51, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1424186, ConflictResolver.conflictItemCount=86, DefaultDependencyCollector.collectTime=194925857, DefaultDependencyCollector.transformTime=1862420}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=258198, ConflictMarker.markTime=57670, ConflictMarker.nodeCount=87, ConflictIdSorter.graphTime=112705, ConflictIdSorter.topsortTime=42155, ConflictIdSorter.conflictIdCount=51, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1586658, ConflictResolver.conflictItemCount=86, DefaultDependencyCollector.collectTime=1611929908, DefaultDependencyCollector.transformTime=2070852}
 [DEBUG] ru.said:xql_crud:war:1.0-SNAPSHOT
 [DEBUG]    com.vaadin:vaadin-client-compiled:jar:8.6.2:compile
 [DEBUG]    com.vaadin:vaadin-server:jar:8.6.2:compile
@@ -857,136 +835,8 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 [DEBUG]       ru.idmt.documino.resources:documino-dio-resource:jar:1.0.243:compile
 [DEBUG]    javax.servlet:javax.servlet-api:jar:3.0.1:compile
 [INFO] 
-[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=57670, ConflictMarker.markTime=36007, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=85188, ConflictIdSorter.topsortTime=14930, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=149005, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=13003859, DefaultDependencyCollector.transformTime=367097}
-[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
-[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
-[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
-[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
-[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
-[DEBUG]   Imported:  < project>ru.said:xql_crud:1.0-SNAPSHOT
-[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
-[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
-[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
-[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@69663380]
-[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
-[DEBUG]   (f) directory = C:\SCM\xql_newcrud\target
-[DEBUG]   (f) excludeDefaultDirectories = false
-[DEBUG]   (f) failOnError = true
-[DEBUG]   (f) followSymLinks = false
-[DEBUG]   (f) outputDirectory = C:\SCM\xql_newcrud\target\classes
-[DEBUG]   (f) reportDirectory = C:\SCM\xql_newcrud\target\site
-[DEBUG]   (f) retryOnError = true
-[DEBUG]   (f) skip = false
-[DEBUG]   (f) testOutputDirectory = C:\SCM\xql_newcrud\target\test-classes
-[DEBUG] -- end configuration --
-[INFO] Deleting C:\SCM\xql_newcrud\target
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT.war
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\vaadin-shared-8.6.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\vaadin-server-8.6.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\vaadin-sass-compiler-0.9.13.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\vaadin-client-compiled-8.6.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\tika-core-1.16.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\slf4j-api-1.6.6.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\sac-1.3.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\postgresql-42.2.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\mchange-commons-java-0.2.11.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\lucene-core-3.6.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\log4j-1.2.17.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jsr305-1.3.9.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jsoup-1.11.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jcr-2.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jcl-over-slf4j-1.7.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\javax.servlet-api-3.0.1.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-webdav-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-spi2dav-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-spi-commons-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-spi-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-jcr2spi-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-jcr2dav-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-jcr-commons-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-data-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-core-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\jackrabbit-api-2.17.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\j2objc-annotations-1.1.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\httpmime-4.5.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\httpcore-4.4.7.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\httpclient-4.5.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\guava-22.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\gentyref-1.2.0.vaadin1.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\flute-1.3.0.gg2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\error_prone_annotations-2.0.18.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\dson-1.6.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\documino-jcr-resource-1.0.243.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\documino-io3-resource-1.0.243.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\documino-final-1.1.197.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\documino-dio-resource-1.0.243.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\documino-all-1.0.252.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\derby-10.14.1.0.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\concurrent-1.3.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-pool-1.5.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-logging-1.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-lang-2.6.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-io-2.4.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-dbcp-1.3.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-collections-3.2.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\commons-codec-1.10.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\c3p0-0.9.5.2.jar
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib\animal-sniffer-annotations-1.14.jar
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\lib
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\xql_crud\MainLayout.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\xql_crud
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\service\AutomobileService.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\service
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\MyUI.class
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\MyUI$MyUIServlet.class
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\model\Automobiles.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said\model
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru\said
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\ru
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes\README
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF\classes
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\WEB-INF
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes\mytheme\styles.scss
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes\mytheme\mytheme.scss
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes\mytheme\favicon.ico
-[INFO] Deleting file C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes\mytheme\addons.scss
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes\mytheme
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN\themes
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\VAADIN
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT\META-INF
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT
-[INFO] Deleting file C:\SCM\xql_newcrud\target\pmd.xml
-[INFO] Deleting file C:\SCM\xql_newcrud\target\maven-pmd-plugin-default.xml
-[INFO] Deleting file C:\SCM\xql_newcrud\target\maven-archiver\pom.properties
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\maven-archiver
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\generated-sources\annotations
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\generated-sources
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\generated-resources\gwt
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\generated-resources
-[INFO] Deleting file C:\SCM\xql_newcrud\target\cpd.xml
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\VAADIN\widgetsets
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\VAADIN
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\ru\said\xql_crud\MainLayout.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\ru\said\xql_crud
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\ru\said\service\AutomobileService.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\ru\said\service
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\ru\said\MyUI.class
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\ru\said\MyUI$MyUIServlet.class
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\ru\said\model\Automobiles.class
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\ru\said\model
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\ru\said
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes\ru
-[INFO] Deleting file C:\SCM\xql_newcrud\target\classes\README
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\classes
-[INFO] Deleting directory C:\SCM\xql_newcrud\target\.generated
-[INFO] Deleting directory C:\SCM\xql_newcrud\target
-[DEBUG] Skipping non-existing directory C:\SCM\xql_newcrud\target\classes
-[DEBUG] Skipping non-existing directory C:\SCM\xql_newcrud\target\test-classes
-[DEBUG] Skipping non-existing directory C:\SCM\xql_newcrud\target\site
-[INFO] 
 [INFO] --- vaadin-maven-plugin:8.6.2:update-widgetset (default) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=739172, ConflictMarker.markTime=319088, ConflictMarker.nodeCount=418, ConflictIdSorter.graphTime=245903, ConflictIdSorter.topsortTime=151055, ConflictIdSorter.conflictIdCount=122, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4971332, ConflictResolver.conflictItemCount=270, DefaultDependencyCollector.collectTime=406352954, DefaultDependencyCollector.transformTime=6468118}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=509956, ConflictMarker.markTime=247951, ConflictMarker.nodeCount=418, ConflictIdSorter.graphTime=135247, ConflictIdSorter.topsortTime=88993, ConflictIdSorter.conflictIdCount=122, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2291871, ConflictResolver.conflictItemCount=270, DefaultDependencyCollector.collectTime=2963212086, DefaultDependencyCollector.transformTime=3310318}
 [DEBUG] com.vaadin:vaadin-maven-plugin:jar:8.6.2:
 [DEBUG]    org.apache.maven:maven-compat:jar:3.0.5:compile
 [DEBUG]       org.apache.maven:maven-model-builder:jar:3.0.5:compile
@@ -1325,7 +1175,7 @@ C:\Program Files\Java\jdk-11.0.3\bin\java com.vaadin.server.widgetsetutils.Widge
 [INFO] Search took 3ms
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=126464, ConflictMarker.markTime=46253, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=61768, ConflictIdSorter.topsortTime=22541, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=493561, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=15303341, DefaultDependencyCollector.transformTime=775472}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=121780, ConflictMarker.markTime=46254, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=32787, ConflictIdSorter.topsortTime=24005, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=359193, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=123459229, DefaultDependencyCollector.transformTime=608024}
 [DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
@@ -1376,13 +1226,13 @@ C:\Program Files\Java\jdk-11.0.3\bin\java com.vaadin.server.widgetsetutils.Widge
 [DEBUG]   (s) overwrite = false
 [DEBUG]   (f) project = MavenProject: ru.said:xql_crud:1.0-SNAPSHOT @ C:\SCM\xql_newcrud\pom.xml
 [DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\SCM\xql_newcrud\src\main\resources, PatternSet [includes: {}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: C:\SCM\xql_newcrud\target\generated-resources\gwt, PatternSet [includes: {}, excludes: {}]}}]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) supportMultiLineFiltering = false
 [DEBUG]   (f) useBuildFilters = true
 [DEBUG]   (s) useDefaultDelimiters = true
 [DEBUG] -- end configuration --
-[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
-, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=clean install -e -X  -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\apache-tomcat-9.0.13\apache-tomcat-9.0.13\webapps, java.vm.version=11.0.3+12-LTS}
+[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
+, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=install -e -X -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\xql_crud, java.vm.version=11.0.3+12-LTS}
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [DEBUG] resource with targetPath null
 directory C:\SCM\xql_newcrud\src\main\resources
@@ -1452,7 +1302,7 @@ snapshots: [enabled => false, update => daily]
 [WARNING] GWT plugin is configured to detect modules, but none were found.
 [INFO] 
 [INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=111242, ConflictMarker.markTime=72600, ConflictMarker.nodeCount=106, ConflictIdSorter.graphTime=65281, ConflictIdSorter.topsortTime=39813, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=333432, ConflictResolver.conflictItemCount=53, DefaultDependencyCollector.collectTime=54423818, DefaultDependencyCollector.transformTime=653399}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=75528, ConflictMarker.markTime=54157, ConflictMarker.nodeCount=106, ConflictIdSorter.graphTime=30445, ConflictIdSorter.topsortTime=23712, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=331383, ConflictResolver.conflictItemCount=53, DefaultDependencyCollector.collectTime=298613051, DefaultDependencyCollector.transformTime=533667}
 [DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:2.5.1:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
 [DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
@@ -1502,7 +1352,7 @@ snapshots: [enabled => false, update => daily]
 [DEBUG]   (f) outputDirectory = C:\SCM\xql_newcrud\target\classes
 [DEBUG]   (f) outputFileName = xql_crud-1.0-SNAPSHOT
 [DEBUG]   (f) projectArtifact = ru.said:xql_crud:war:1.0-SNAPSHOT
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) showDeprecation = false
 [DEBUG]   (f) showWarnings = false
 [DEBUG]   (f) source = 11
@@ -1787,13 +1637,13 @@ snapshots: [enabled => false, update => daily]
 [DEBUG]   (s) overwrite = false
 [DEBUG]   (f) project = MavenProject: ru.said:xql_crud:1.0-SNAPSHOT @ C:\SCM\xql_newcrud\pom.xml
 [DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\SCM\xql_newcrud\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) supportMultiLineFiltering = false
 [DEBUG]   (f) useBuildFilters = true
 [DEBUG]   (s) useDefaultDelimiters = true
 [DEBUG] -- end configuration --
-[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
-, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=clean install -e -X  -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\apache-tomcat-9.0.13\apache-tomcat-9.0.13\webapps, java.vm.version=11.0.3+12-LTS}
+[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
+, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=install -e -X -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\xql_crud, java.vm.version=11.0.3+12-LTS}
 [INFO] Using 'UTF-8' encoding to copy filtered resources.
 [DEBUG] resource with targetPath null
 directory C:\SCM\xql_newcrud\src\test\resources
@@ -1818,7 +1668,7 @@ includes []
 [DEBUG]   (f) optimize = false
 [DEBUG]   (f) outputDirectory = C:\SCM\xql_newcrud\target\test-classes
 [DEBUG]   (f) outputFileName = xql_crud-1.0-SNAPSHOT
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) showDeprecation = false
 [DEBUG]   (f) showWarnings = false
 [DEBUG]   (f) source = 11
@@ -1830,7 +1680,7 @@ includes []
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=144907, ConflictMarker.markTime=61183, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=58255, ConflictIdSorter.topsortTime=24591, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=414229, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=33880994, DefaultDependencyCollector.transformTime=721314}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=165691, ConflictMarker.markTime=69087, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=68209, ConflictIdSorter.topsortTime=22248, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=296254, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=300895261, DefaultDependencyCollector.transformTime=639347}
 [DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
 [DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
@@ -1932,7 +1782,7 @@ snapshots: [enabled => false, update => daily]
 [DEBUG]   (s) useUnlimitedThreads = false
 [DEBUG]   (s) workingDirectory = C:\SCM\xql_newcrud
 [DEBUG]   (s) project = MavenProject: ru.said:xql_crud:1.0-SNAPSHOT @ C:\SCM\xql_newcrud\pom.xml
-[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG] -- end configuration --
 [INFO] No tests to run.
 [INFO] 
@@ -1994,7 +1844,7 @@ snapshots: [enabled => false, update => daily]
 [DEBUG]   (f) renderProcessingErrors = true
 [DEBUG]   (f) renderRuleViolationPriority = true
 [DEBUG]   (f) renderViolationsByPriority = true
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) showPmdLog = true
 [DEBUG]   (f) skip = false
 [DEBUG]   (f) skipEmptyReport = true
@@ -2139,62 +1989,62 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG] Inclusions: **/*.java
 [DEBUG] Searching for files in directory C:\SCM\xql_newcrud\src\main\java
 [DEBUG] Executing PMD...
-[DEBUG] Loaded rule EmptySwitchStatements
-[DEBUG] Loaded rule EmptyIfStmt
-[DEBUG] Loaded rule UnusedImports
-[DEBUG] Loaded rule EmptyWhileStmt
-[DEBUG] Loaded rule UnusedPrivateMethod
-[DEBUG] Loaded rule DontCallThreadRun
-[DEBUG] Loaded rule EmptySynchronizedBlock
-[DEBUG] Loaded rule OverrideBothEqualsAndHashcode
-[DEBUG] Loaded rule CollapsibleIfStatements
-[DEBUG] Loaded rule CheckSkipResult
-[DEBUG] Loaded rule DoubleCheckedLocking
-[DEBUG] Loaded rule ImportFromSamePackage
-[DEBUG] Loaded rule UnusedFormalParameter
-[DEBUG] Loaded rule UselessParentheses
-[DEBUG] Loaded rule MisplacedNullCheck
-[DEBUG] Loaded rule AvoidUsingHardCodedIP
-[DEBUG] Loaded rule UnusedPrivateField
-[DEBUG] Loaded rule ReturnFromFinallyBlock
-[DEBUG] Loaded rule DontUseFloatTypeForLoopIndices
-[DEBUG] Loaded rule DontImportJavaLang
-[DEBUG] Loaded rule UnusedLocalVariable
-[DEBUG] Loaded rule UselessOverridingMethod
-[DEBUG] Loaded rule ClassCastExceptionWithToArray
-[DEBUG] Loaded rule EmptyFinallyBlock
-[DEBUG] Loaded rule EmptyCatchBlock
-[DEBUG] Loaded rule UnnecessaryReturn
-[DEBUG] Loaded rule AvoidBranchingStatementAsLastInLoop
-[DEBUG] Loaded rule AvoidUsingOctalValues
-[DEBUG] Loaded rule ForLoopShouldBeWhileLoop
-[DEBUG] Loaded rule AvoidThreadGroup
-[DEBUG] Loaded rule TooManyStaticImports
-[DEBUG] Loaded rule UselessOperationOnImmutable
-[DEBUG] Loaded rule BooleanInstantiation
-[DEBUG] Loaded rule UselessQualifiedThis
-[DEBUG] Loaded rule EmptyStatementNotInLoop
-[DEBUG] Loaded rule UnnecessaryModifier
-[DEBUG] Loaded rule BrokenNullCheck
-[DEBUG] Loaded rule JumbledIncrementer
-[DEBUG] Loaded rule DuplicateImports
-[DEBUG] Loaded rule AvoidMultipleUnaryOperators
-[DEBUG] Loaded rule UnnecessaryFullyQualifiedName
-[DEBUG] Loaded rule EmptyTryBlock
-[DEBUG] Loaded rule CheckResultSet
-[DEBUG] Loaded rule SimplifiedTernary
-[DEBUG] Loaded rule BigIntegerInstantiation
-[DEBUG] Loaded rule EmptyStatementBlock
-[DEBUG] Loaded rule UnusedNullCheckInEquals
-[DEBUG] Loaded rule EmptyInitializer
-[DEBUG] Loaded rule UnnecessaryConversionTemporary
-[DEBUG] Loaded rule ExtendsObject
-[DEBUG] Loaded rule UnconditionalIfStatement
 [DEBUG] Loaded rule AvoidDecimalLiteralsInBigDecimalConstructor
-[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\model\Automobiles.java
-[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\xql_crud\MainLayout.java
-[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\service\AutomobileService.java
+[DEBUG] Loaded rule EmptyInitializer
+[DEBUG] Loaded rule DoubleCheckedLocking
+[DEBUG] Loaded rule TooManyStaticImports
+[DEBUG] Loaded rule AvoidMultipleUnaryOperators
+[DEBUG] Loaded rule UselessQualifiedThis
+[DEBUG] Loaded rule AvoidUsingHardCodedIP
+[DEBUG] Loaded rule EmptyStatementBlock
+[DEBUG] Loaded rule OverrideBothEqualsAndHashcode
+[DEBUG] Loaded rule ExtendsObject
+[DEBUG] Loaded rule SimplifiedTernary
+[DEBUG] Loaded rule UnusedPrivateField
+[DEBUG] Loaded rule DontImportJavaLang
+[DEBUG] Loaded rule EmptyWhileStmt
+[DEBUG] Loaded rule EmptyFinallyBlock
+[DEBUG] Loaded rule EmptySwitchStatements
+[DEBUG] Loaded rule UnusedFormalParameter
+[DEBUG] Loaded rule UselessOverridingMethod
+[DEBUG] Loaded rule BigIntegerInstantiation
+[DEBUG] Loaded rule EmptyCatchBlock
+[DEBUG] Loaded rule AvoidThreadGroup
+[DEBUG] Loaded rule CollapsibleIfStatements
+[DEBUG] Loaded rule BooleanInstantiation
+[DEBUG] Loaded rule DontUseFloatTypeForLoopIndices
+[DEBUG] Loaded rule EmptyStatementNotInLoop
+[DEBUG] Loaded rule UnnecessaryReturn
+[DEBUG] Loaded rule EmptyIfStmt
+[DEBUG] Loaded rule MisplacedNullCheck
+[DEBUG] Loaded rule JumbledIncrementer
+[DEBUG] Loaded rule UnnecessaryConversionTemporary
+[DEBUG] Loaded rule CheckSkipResult
+[DEBUG] Loaded rule DuplicateImports
+[DEBUG] Loaded rule CheckResultSet
+[DEBUG] Loaded rule ImportFromSamePackage
+[DEBUG] Loaded rule UnusedLocalVariable
+[DEBUG] Loaded rule ForLoopShouldBeWhileLoop
+[DEBUG] Loaded rule UnusedNullCheckInEquals
+[DEBUG] Loaded rule UselessParentheses
+[DEBUG] Loaded rule ReturnFromFinallyBlock
+[DEBUG] Loaded rule UselessOperationOnImmutable
+[DEBUG] Loaded rule AvoidBranchingStatementAsLastInLoop
+[DEBUG] Loaded rule DontCallThreadRun
+[DEBUG] Loaded rule BrokenNullCheck
+[DEBUG] Loaded rule UnnecessaryFullyQualifiedName
+[DEBUG] Loaded rule UnusedPrivateMethod
+[DEBUG] Loaded rule EmptyTryBlock
+[DEBUG] Loaded rule UnconditionalIfStatement
+[DEBUG] Loaded rule EmptySynchronizedBlock
+[DEBUG] Loaded rule UnnecessaryModifier
+[DEBUG] Loaded rule ClassCastExceptionWithToArray
+[DEBUG] Loaded rule UnusedImports
+[DEBUG] Loaded rule AvoidUsingOctalValues
 [DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\MyUI.java
+[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\model\Automobiles.java
+[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\service\AutomobileService.java
+[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\xql_crud\MainLayout.java
 [DEBUG] No type information for node Expression
 [DEBUG] No type information for node Expression
 [DEBUG] Unable to use RuleChain for XPath: 
@@ -2246,13 +2096,13 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 
                 
 [DEBUG] No type information for node Expression
+[DEBUG] No type information for node Expression
+[DEBUG] No type information for node Expression
 [DEBUG] Unable to use RuleChain for XPath: 
 
 .[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
 
                 
-[DEBUG] No type information for node Expression
-[DEBUG] No type information for node Expression
 [DEBUG] Unable to use RuleChain for XPath: 
 
 .[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
@@ -2267,7 +2117,19 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 .[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
 
                 
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
 [DEBUG] No type information for node Expression
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
 [DEBUG] No type information for node Expression
 [DEBUG] Unable to use RuleChain for XPath: 
 
@@ -2363,7 +2225,7 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG]   (f) renderProcessingErrors = true
 [DEBUG]   (f) renderRuleViolationPriority = true
 [DEBUG]   (f) renderViolationsByPriority = true
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG]   (f) showPmdLog = true
 [DEBUG]   (f) skip = false
 [DEBUG]   (f) skipEmptyReport = true
@@ -2515,62 +2377,62 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG] Inclusions: **/*.java
 [DEBUG] Searching for files in directory C:\SCM\xql_newcrud\src\main\java
 [DEBUG] Executing PMD...
-[DEBUG] Loaded rule UnconditionalIfStatement
-[DEBUG] Loaded rule CollapsibleIfStatements
-[DEBUG] Loaded rule UnusedLocalVariable
-[DEBUG] Loaded rule EmptyIfStmt
-[DEBUG] Loaded rule EmptyInitializer
-[DEBUG] Loaded rule EmptyCatchBlock
-[DEBUG] Loaded rule ImportFromSamePackage
-[DEBUG] Loaded rule MisplacedNullCheck
-[DEBUG] Loaded rule BigIntegerInstantiation
-[DEBUG] Loaded rule UnusedNullCheckInEquals
-[DEBUG] Loaded rule EmptyTryBlock
-[DEBUG] Loaded rule EmptyFinallyBlock
-[DEBUG] Loaded rule ExtendsObject
-[DEBUG] Loaded rule UselessQualifiedThis
-[DEBUG] Loaded rule AvoidUsingOctalValues
-[DEBUG] Loaded rule EmptySwitchStatements
-[DEBUG] Loaded rule JumbledIncrementer
-[DEBUG] Loaded rule UnusedFormalParameter
-[DEBUG] Loaded rule BrokenNullCheck
-[DEBUG] Loaded rule DontCallThreadRun
-[DEBUG] Loaded rule UselessOverridingMethod
-[DEBUG] Loaded rule UnnecessaryModifier
-[DEBUG] Loaded rule CheckResultSet
-[DEBUG] Loaded rule UnnecessaryFullyQualifiedName
-[DEBUG] Loaded rule EmptyWhileStmt
-[DEBUG] Loaded rule EmptyStatementBlock
-[DEBUG] Loaded rule DontUseFloatTypeForLoopIndices
-[DEBUG] Loaded rule EmptySynchronizedBlock
-[DEBUG] Loaded rule ClassCastExceptionWithToArray
-[DEBUG] Loaded rule UnusedImports
-[DEBUG] Loaded rule EmptyStatementNotInLoop
-[DEBUG] Loaded rule SimplifiedTernary
-[DEBUG] Loaded rule AvoidMultipleUnaryOperators
-[DEBUG] Loaded rule DoubleCheckedLocking
-[DEBUG] Loaded rule DuplicateImports
-[DEBUG] Loaded rule AvoidThreadGroup
-[DEBUG] Loaded rule UselessOperationOnImmutable
-[DEBUG] Loaded rule UnusedPrivateField
-[DEBUG] Loaded rule UnnecessaryReturn
-[DEBUG] Loaded rule UnnecessaryConversionTemporary
-[DEBUG] Loaded rule DontImportJavaLang
 [DEBUG] Loaded rule CheckSkipResult
-[DEBUG] Loaded rule AvoidUsingHardCodedIP
-[DEBUG] Loaded rule OverrideBothEqualsAndHashcode
-[DEBUG] Loaded rule ReturnFromFinallyBlock
-[DEBUG] Loaded rule UselessParentheses
-[DEBUG] Loaded rule AvoidDecimalLiteralsInBigDecimalConstructor
-[DEBUG] Loaded rule ForLoopShouldBeWhileLoop
-[DEBUG] Loaded rule UnusedPrivateMethod
-[DEBUG] Loaded rule AvoidBranchingStatementAsLastInLoop
+[DEBUG] Loaded rule EmptyFinallyBlock
+[DEBUG] Loaded rule AvoidMultipleUnaryOperators
+[DEBUG] Loaded rule JumbledIncrementer
+[DEBUG] Loaded rule CheckResultSet
+[DEBUG] Loaded rule UselessQualifiedThis
+[DEBUG] Loaded rule EmptyStatementNotInLoop
+[DEBUG] Loaded rule UselessOverridingMethod
+[DEBUG] Loaded rule UnnecessaryConversionTemporary
 [DEBUG] Loaded rule BooleanInstantiation
+[DEBUG] Loaded rule ClassCastExceptionWithToArray
+[DEBUG] Loaded rule UnnecessaryModifier
+[DEBUG] Loaded rule ImportFromSamePackage
+[DEBUG] Loaded rule UselessParentheses
+[DEBUG] Loaded rule UnnecessaryReturn
+[DEBUG] Loaded rule ExtendsObject
+[DEBUG] Loaded rule EmptyStatementBlock
+[DEBUG] Loaded rule EmptyIfStmt
+[DEBUG] Loaded rule DontCallThreadRun
+[DEBUG] Loaded rule EmptyTryBlock
+[DEBUG] Loaded rule AvoidThreadGroup
+[DEBUG] Loaded rule AvoidUsingOctalValues
+[DEBUG] Loaded rule UnusedImports
+[DEBUG] Loaded rule UnusedPrivateMethod
+[DEBUG] Loaded rule DuplicateImports
+[DEBUG] Loaded rule EmptyWhileStmt
+[DEBUG] Loaded rule UnnecessaryFullyQualifiedName
+[DEBUG] Loaded rule UnconditionalIfStatement
+[DEBUG] Loaded rule UnusedLocalVariable
+[DEBUG] Loaded rule MisplacedNullCheck
+[DEBUG] Loaded rule BrokenNullCheck
+[DEBUG] Loaded rule EmptySwitchStatements
+[DEBUG] Loaded rule DoubleCheckedLocking
+[DEBUG] Loaded rule SimplifiedTernary
+[DEBUG] Loaded rule ReturnFromFinallyBlock
+[DEBUG] Loaded rule EmptySynchronizedBlock
+[DEBUG] Loaded rule ForLoopShouldBeWhileLoop
+[DEBUG] Loaded rule AvoidBranchingStatementAsLastInLoop
+[DEBUG] Loaded rule AvoidDecimalLiteralsInBigDecimalConstructor
+[DEBUG] Loaded rule BigIntegerInstantiation
+[DEBUG] Loaded rule UnusedFormalParameter
+[DEBUG] Loaded rule UnusedNullCheckInEquals
+[DEBUG] Loaded rule OverrideBothEqualsAndHashcode
+[DEBUG] Loaded rule DontImportJavaLang
+[DEBUG] Loaded rule DontUseFloatTypeForLoopIndices
+[DEBUG] Loaded rule AvoidUsingHardCodedIP
+[DEBUG] Loaded rule CollapsibleIfStatements
 [DEBUG] Loaded rule TooManyStaticImports
+[DEBUG] Loaded rule EmptyCatchBlock
+[DEBUG] Loaded rule EmptyInitializer
+[DEBUG] Loaded rule UnusedPrivateField
+[DEBUG] Loaded rule UselessOperationOnImmutable
 [DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\MyUI.java
 [DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\model\Automobiles.java
-[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\service\AutomobileService.java
 [DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\xql_crud\MainLayout.java
+[DEBUG] Processing C:\SCM\xql_newcrud\src\main\java\ru\said\service\AutomobileService.java
 [DEBUG] Unable to use RuleChain for XPath: 
 
 .[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
@@ -2628,11 +2490,6 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
                 
 [DEBUG] Unable to use RuleChain for XPath: 
 
-.[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
-
-                
-[DEBUG] Unable to use RuleChain for XPath: 
-
 (//PrimaryPrefix[ends-with(Name/@Image, '.equals') and Name/@Image != 'Arrays.equals'] | //PrimarySuffix[@Image='equals' and not(../PrimaryPrefix/Literal)])
  /following-sibling::PrimarySuffix/Arguments/ArgumentList/Expression
  /PrimaryExpression[count(PrimarySuffix)=0]/PrimaryPrefix
@@ -2640,6 +2497,11 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
  /EqualityExpression[@Image="!=" and count(./preceding-sibling::*)=0 and
  ./PrimaryExpression/PrimaryPrefix/Literal/NullLiteral]
   /PrimaryExpression/PrimaryPrefix/Name/@Image]
+
+                
+[DEBUG] Unable to use RuleChain for XPath: 
+
+.[count(ImportDeclaration[@Static = 'true']) > $maximumStaticImports]
 
                 
 [DEBUG] Unable to use RuleChain for XPath: 
@@ -2676,7 +2538,19 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 , argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
 , JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
 ]] couldnt be resolved
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
 [DEBUG] No type information for node Expression
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
+[DEBUG] Method MethodType [method=public void org.apache.log4j.Category.error(java.lang.Object,java.lang.Throwable), returnType=JavaTypeDefinition [clazz=void, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, argTypes=[JavaTypeDefinition [clazz=class java.lang.Object, definitionType=EXACT, genericArgs=[], isGeneric=false]
+, JavaTypeDefinition [clazz=class java.lang.Throwable, definitionType=EXACT, genericArgs=[], isGeneric=false]
+]] couldnt be resolved
 [DEBUG] No type information for node Expression
 [DEBUG] Unable to use RuleChain for XPath: 
 
@@ -2828,7 +2702,7 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [INFO] 
 [INFO] 
 [INFO] --- maven-war-plugin:2.4:war (default-war) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=113583, ConflictMarker.markTime=48888, ConflictMarker.nodeCount=100, ConflictIdSorter.graphTime=37471, ConflictIdSorter.topsortTime=29860, ConflictIdSorter.conflictIdCount=35, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=429744, ConflictResolver.conflictItemCount=92, DefaultDependencyCollector.collectTime=29610777, DefaultDependencyCollector.transformTime=684722}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=100118, ConflictMarker.markTime=46839, ConflictMarker.nodeCount=100, ConflictIdSorter.graphTime=38349, ConflictIdSorter.topsortTime=29860, ConflictIdSorter.conflictIdCount=35, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=314404, ConflictResolver.conflictItemCount=92, DefaultDependencyCollector.collectTime=233662550, DefaultDependencyCollector.transformTime=552988}
 [DEBUG] org.apache.maven.plugins:maven-war-plugin:jar:2.4:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
@@ -2911,12 +2785,12 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG]   (s) webappDirectory = C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT
 [DEBUG]   (s) workDirectory = C:\SCM\xql_newcrud\target\war\work
 [DEBUG]   (s) project = MavenProject: ru.said:xql_crud:1.0-SNAPSHOT @ C:\SCM\xql_newcrud\pom.xml
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@e3ed455
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@1a345298
 [DEBUG] -- end configuration --
 [INFO] Packaging webapp
 [INFO] Assembling webapp [xql_crud] in [C:\SCM\xql_newcrud\target\xql_crud-1.0-SNAPSHOT]
-[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
-, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=clean install -e -X  -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\apache-tomcat-9.0.13\apache-tomcat-9.0.13\webapps, java.vm.version=11.0.3+12-LTS}
+[DEBUG] properties used {env.NUMBER_OF_PROCESSORS=8, env.USERPROFILE=C:\Users\1, java.specification.version=11, sun.cpu.isalist=amd64, sun.arch.data.model=64, env.PROGRAMW6432=C:\Program Files, java.vendor.url=http://java.oracle.com/, env.OS=Windows_NT, env.FARHOME=D:\Far Manager, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.3\bin, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher install -e -X -l log.txt, env.SYSTEMROOT=C:\Windows, env.PYCHARM=C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, jdk.debug=release, maven.version=3.5.2, java.specification.vendor=Oracle Corporation, java.version.date=2019-04-16, java.home=C:\Program Files\Java\jdk-11.0.3, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, env.LOCALAPPDATA=C:\Users\1\AppData\Local, env.USERDOMAIN_ROAMINGPROFILE=DESKTOP-MUVDR63, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.3+12-LTS, env.PATH=(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;, env.PUBLIC=C:\Users\Public, env.EXEC_DIR=C:\SCM\xql_newcrud, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, env.PGDATA=C:\Program Files\PostgreSQL\10\data, file.encoding=Cp1251, java.vendor.version=18.9, env.COMPUTERNAME=DESKTOP-MUVDR63, env.HOMEPATH=\Users\1, env.APPDATA=C:\Users\1\AppData\Roaming, java.io.tmpdir=C:\Users\1\AppData\Local\Temp\, java.version=11.0.3, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, org.slf4j.simpleLogger.defaultLogLevel=debug, java.library.path=C:\Program Files\Java\jdk-11.0.3\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;(C):\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Kaspersky Lab\Kaspersky Endpoint Security 10 for Windows SP2\;C:\Program Files\Git\cmd;C:\Program Files\PostgreSQL\10\bin;C:\EOS\PB10DK\;C:\Users\1\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;;D:\java\apache-maven-3.5.2\bin;C:\Program Files\Java\jdk-11.0.3\bin;C:\EOS\PB10DK\;C:\Program Files\JetBrains\PyCharm 2019.2.1\bin;;., java.vendor=Oracle Corporation, env.ERROR_CODE=0, classworlds.conf=D:\java\apache-maven-3.5.2\bin\..\bin\m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.PGUSER=postgres, sun.desktop=windows, user.timezone=Europe/Moscow, env.FARLOCALPROFILE=C:\Users\1\AppData\Local\Far Manager\Profile, os.name=Windows 10, java.vm.specification.version=11, env.=::=::\, user.home=C:\Users\1, env.JRE_HOME=C:\Program Files\Java\jre1.8.0_201, env.ALLUSERSPROFILE=C:\ProgramData, env.SESSIONNAME=Console, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, path.separator=;, os.version=10.0, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.M2_HOME=D:\java\apache-maven-3.5.2, env.USERNAME=~!$123, os.arch=amd64, maven.multiModuleProjectDirectory=C:\SCM\xql_newcrud, env.MAVEN_PROJECTBASEDIR=C:\SCM\xql_newcrud, java.vm.info=mixed mode, env.FPS_BROWSER_USER_PROFILE_STRING=Default, env.TEMP=C:\Users\1\AppData\Local\Temp, java.class.version=55.0, awt.toolkit=sun.awt.windows.WToolkit, env.PGPORT=5432, sun.jnu.encoding=Cp1251, env.FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, env.PGDATABASE=postgres, maven.build.version=Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T10:58:13+03:00), maven.home=D:\java\apache-maven-3.5.2\bin\.., sun.stderr.encoding=cp866, env.JAVA_HOME=C:\Program Files\Java\jdk-11.0.3, env.PROGRAMFILES=C:\Program Files, file.separator=\, java.vm.compressedOopsMode=Zero based, env.CLASSWORLDS_JAR="D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar", line.separator=
+, sun.stdout.encoding=cp866, env.PROMPT=$P$G, env.FARLANG=Russian, env.PROCESSOR_REVISION=3c03, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel, env.PROGRAMDATA=C:\ProgramData, user.name=~!$123, env.SYSTEMDRIVE=C:, env.JVMCONFIG=\.mvn\jvm.config, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.PROCESSOR_LEVEL=6, env.HOMEDRIVE=C:, env.PSMODULEPATH=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules, env.TMP=C:\Users\1\AppData\Local\Temp, sun.os.patch.level=, env.PGLOCALEDIR=C:\Program Files\PostgreSQL\10\share\locale\, env.LOGONSERVER=\\DESKTOP-MUVDR63, library.jansi.path=D:\java\apache-maven-3.5.2\bin\..\lib\jansi-native, env.WINDIR=C:\Windows, java.class.path=D:\java\apache-maven-3.5.2\bin\..\boot\plexus-classworlds-2.5.2.jar, java.vm.vendor=Oracle Corporation, env.PROCESSOR_ARCHITECTURE=AMD64, user.variant=, maven.commons.repository.url=http://svndev.itc-c.local:3080/artifactory/idmt.commons, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, maven.conf=D:\java\apache-maven-3.5.2\bin\../conf, sun.java.launcher=SUN_STANDARD, user.country=RU, env.USERDOMAIN=DESKTOP-MUVDR63, env.COMSPEC=C:\Windows\system32\cmd.exe, sun.cpu.endian=little, user.language=ru, env.ASL.LOG=Destination=file, env.JAVACMD=C:\Program Files\Java\jdk-11.0.3\bin\java.exe, env.MAVEN_HOME=D:\java\apache-maven-3.5.2\bin\.., env.INTELLIJ IDEA=C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.3\bin;, env.WDIR=C:\, env.=C:=C:\SCM\xql_newcrud, java.runtime.name=Java(TM) SE Runtime Environment, project.build.sourceEncoding=UTF-8, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=install -e -X -l log.txt, java.vendor.url.bug=http://bugreport.java.com/bugreport/, env.FARPROFILE=C:\Users\1\AppData\Roaming\Far Manager\Profile, vaadin.version=8.8.6, user.dir=C:\SCM\xql_newcrud, env.=D:=D:\java\IDEA\My projects\xql_crud, java.vm.version=11.0.3+12-LTS}
 [INFO] Processing war project
 [INFO] Copying webapp resources [C:\SCM\xql_newcrud\src\main\webapp]
 [DEBUG]  + VAADIN/themes/mytheme/addons.scss has been copied.
@@ -3037,7 +2911,7 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG]  + WEB-INF/lib/documino-dio-resource-1.0.243.jar has been copied.
 [DEBUG] Processing: javax.servlet-api-3.0.1.jar
 [DEBUG]  + WEB-INF/lib/javax.servlet-api-3.0.1.jar has been copied.
-[INFO] Webapp assembled in [172 msecs]
+[INFO] Webapp assembled in [218 msecs]
 [DEBUG] Excluding [] from the generated webapp archive.
 [DEBUG] Including [**] in the generated webapp archive.
 [DEBUG] Build won't fail if web.xml file is missing.
@@ -3120,7 +2994,7 @@ java.net.MalformedURLException: no protocol: /rulesets/java/maven-pmd-plugin-def
 [DEBUG] adding entry META-INF/maven/ru.said/xql_crud/pom.properties
 [INFO] 
 [INFO] --- maven-install-plugin:2.4:install (default-install) @ xql_crud ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=33958, ConflictMarker.markTime=26347, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=16393, ConflictIdSorter.topsortTime=27518, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=291571, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=9067074, DefaultDependencyCollector.transformTime=417157}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=77576, ConflictMarker.markTime=33080, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=23126, ConflictIdSorter.topsortTime=38642, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=241804, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=107886859, DefaultDependencyCollector.transformTime=449650}
 [DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.4:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
@@ -3169,7 +3043,7 @@ snapshots: [enabled => true, update => always]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 17.064 s
-[INFO] Finished at: 2020-01-30T11:07:09+03:00
-[INFO] Final Memory: 33M/120M
+[INFO] Total time: 26.204 s
+[INFO] Finished at: 2020-01-31T09:05:41+03:00
+[INFO] Final Memory: 37M/134M
 [INFO] ------------------------------------------------------------------------
